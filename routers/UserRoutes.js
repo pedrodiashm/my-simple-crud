@@ -3,6 +3,8 @@ const { createUser, getUsers, updateUser, deleteUser } = require('../controllers
 
 const router = express.Router();
 
+// as rotas para cada request e as callbacks do Controller
+
 router.post('/', createUser);
 router.get('/', getUsers);
 router.put('/:id', updateUser);

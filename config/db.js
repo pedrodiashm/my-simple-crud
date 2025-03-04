@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
-// creating connection
+
+// ./config/db recebe a conexão com o banco de dados e sera exportado para server.js
 
 const connectDB = async () => {
   try {
