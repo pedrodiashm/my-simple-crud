@@ -2,7 +2,8 @@ const express = require("express");
 const path = require('path')
 const connectdb = require("./config/db");
 const userRoutes = require("./routers/UserRoutes");
-const cors = require('cors');
+
+
 
 
 require('dotenv').config();
@@ -16,7 +17,6 @@ connectdb();
 
 //possibilita a manipulação de requisições put e post
 app.use(express.json());
-app.use(cors());
 app.use('/api/users', userRoutes);
 app.use(express.static('public'))
 
