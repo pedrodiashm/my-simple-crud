@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require('path')
 const connectdb = require("./config/db");
-const userRoutes = require("./routers/UserRoutes");
+const userRoutes = require("./routers/Index");
 const logger = require('morgan');
 require('dotenv').config();
 
